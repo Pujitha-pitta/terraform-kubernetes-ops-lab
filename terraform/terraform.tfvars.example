@@ -1,0 +1,9 @@
+aws_region         = "ap-south-1"
+project_name       = "ops-observability-lab"
+cluster_name       = "ops-observability-lab"
+kubernetes_version = "1.36"
+node_instance_type = "t3.small"
+
+# Replace with your current public IPv4 address followed by /32.
+# Do not use 0.0.0.0/0 for the cluster API endpoint.
+admin_cidr = "198.51.100.25/32"
