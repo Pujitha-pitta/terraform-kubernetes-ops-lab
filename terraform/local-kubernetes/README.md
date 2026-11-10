@@ -1,6 +1,6 @@
 # Terraform Local Kubernetes Lab
 
-This configuration uses Terraform to create a namespace, a two-replica app Deployment, and a ClusterIP Service in your local Docker Desktop Kubernetes cluster. It does not call AWS or create billable cloud resources.
+This configuration uses Terraform to create a namespace, a three-replica app Deployment, and a ClusterIP Service in your local Docker Desktop Kubernetes cluster. It does not call AWS or create billable cloud resources.
 
 ## Before you begin
 
@@ -45,7 +45,7 @@ Open http://localhost:8000/healthz. Keep the port-forward window open while usin
 
 ## Experiment with desired state
 
-Change the replica count in variables.tf from 2 to 3, then run terraform plan and terraform apply again. Terraform updates the deployment; Kubernetes creates the additional pod. Return the value to 2 and apply again.
+Change the replica count in variables.tf from 3 to 2, then run terraform plan and terraform apply again. Terraform updates the deployment; Kubernetes removes one pod. Return the value to 3 and apply again.
 
 ## Clean up
 

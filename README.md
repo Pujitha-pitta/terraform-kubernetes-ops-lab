@@ -60,4 +60,4 @@ Change the replica count in `variables.tf`, then use `terraform plan` and `terra
 terraform destroy
 ```
 
-Review the plan before applying or destroying resources. This configuration targets the local Kubernetes context and does not provision AWS, EKS, or CloudWatch resources.
+Review the plan before applying or destroying resources. The steps above target the local Kubernetes context and do not provision AWS, EKS, or CloudWatch resources. The repository also retains a separate AWS EKS configuration under `terraform/`; applying it can create billable AWS resources.
